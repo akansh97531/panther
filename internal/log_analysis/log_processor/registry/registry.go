@@ -77,6 +77,8 @@ var (
 			&zeeklogs.ZeekDNS{}, zeeklogs.ZeekDNSDesc),
 		(&suricatalogs.AnomalyParser{}).LogType(): DefaultLogParser(&suricatalogs.AnomalyParser{},
 			&suricatalogs.Anomaly{}, suricatalogs.AnomalyDesc),
+		(&suricatalogs.DNSParser{}).LogType(): DefaultLogParser(&suricatalogs.DNSParser{},
+			&suricatalogs.DNS{}, suricatalogs.DNSDesc),
 	}
 )
 
